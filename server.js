@@ -119,4 +119,6 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (res) => res.send("hello word"));
+
 http.listen(8000);
