@@ -5,6 +5,10 @@ const roomSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  personJoined: {
+    type: [String],
+    require: true,
+  },
 });
 
 const Rooms = mongoose.model("rooms", roomSchema);
