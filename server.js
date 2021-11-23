@@ -20,6 +20,7 @@ const MarkDown = require("./models/markdown");
 
 const { detectUserWin } = require("./utils/helpers");
 
+app.use(express.static("public"));
 app.use(cors());
 
 io.on("connection", (socket) => {
